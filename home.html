@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Home page</title>
+        <style>
+            .body{
+                background:linear-gradient(45deg,black 25%,transparent 25%);
+            }
+           
+           ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(187, 20, 187, 0.133);
+            }
+
+            li a{
+                display:inline-block;
+                color: rgb(51, 3, 19);
+                padding: 8px;
+                text-decoration: underline;
+                float:right;
+                text-transform: uppercase;
+            }
+             li a:hover{
+                background-color:rgb(202, 14, 45) ;
+                color:#fff;
+            }
+            .animate-character{
+                text-align: center;
+                text-transform: uppercase;
+                background-image: linear-gradient(-125deg,#231557,#44107a,#ff1361,#fff800);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;    
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: inline-block;
+                font-size: 100px;
+                }
+            </style>
+    </head>
+    <body>
+        <background img="cup-of-coffee-g0d9125791_1920.jpg"></background>
+        <ul>
+           <li><a href="login.html">Login</a></li>
+           <li><a href="register.html">Register</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+         <h1 class="animate-character">WELCOME TO MY COMPANY</h1>
+         <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
+                <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
+                <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
+                <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
+                <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="boxicons/css/boxicons.css">
+    </head>
+    <body>
+        
+        <div class="box">
+            <div class="cotainer">
+                <div class="top header">
+                     <span>Have an account</span>
+                     <header>Login</header>
+                </div>
+                
+                <div class="input field">
+                    <input type="text" class="input" placeholder="Username"  required>
+                    <i class="bx bx-user"></i>
+                </div>
+                <div>
+                    <input type="text" class="input" placeholder="password" required>
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div>
+                    <input type="submit" class="submit" value="Login">
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <input type="checkbox" id="check">
+                        <label for="check"> Remembre Me</label>
+                    </div>
+                    <div class="right">
+                        <label><a href="#">Forgot password</a></label>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+    </body>
+</html>

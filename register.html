@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registration Page </title>
+        <style>
+            h1{
+                color: #167c5a;
+                size: 50px;
+                font-style: bold;
+                text-align: center;
+            }
+            body{
+                background-image:linear-gradient(white,skyblue);
+                margin: 20px 20px 25px 25px;
+                padding: 40px 40px 45px 45px ;
+                border: #ecd3dc;
+                border: 15px;
+            }
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(187, 20, 187, 0.133);
+            }
+            li a{
+                display:block;
+                color: rgb(51, 3, 19);
+                padding: 8px;
+                text-decoration: underline;
+                float:right;
+                text-transform: uppercase;
+            }
+             li a:hover{
+                background-color:rgb(202, 14, 45) ;
+                color:#fff;
+            }
+            .here{
+                font-size: 24;
+            }
+        </style>
+        <script>
+            function showAlert() {
+                alert ("succefully registerd ");
+        }
+        </script>
+        
+    </head> 
+</head>
+<body>
+    <div>
+        <h1>Registration Page</h1>
+        <form action="home.html" method="post" >
+        Name:<input type="text" placeholder="firstname" name="first name">
+        <input type="text" placeholder="lastname" name="last name"><br><br>
+        Date of Birth:<input type="date" tabindex="3" name="date of birth" size="15" maxlength="30"><br><br>
+        gender:
+        <input type="radio" id="gender" name="gender" value="male">male
+        <input type="radio" id="gender" name="gender" value="female">female
+        <input type="radio" id="gender" name="gender" value="other">others<br><br>
+
+        mob no<input type="contact"><br><br>
+        
+        email<input type="email" name="email" placeholder="email"><br><br>
+        create your password
+        <input type="password"  name="password"><br><br>
+        confirm your password
+        <input type="password"  name="password"><br><br>
+        <input type="checkbox" value="checkbox">Remember me?<br><br>
+        Subject<select>
+            <option>---select---
+                <option>Java</option>
+                <option>Data Science</option>
+                <option>Data Analytics</option>
+                <option>Python</option>
+                <option>machine learning</option>
+                <option>Artificial inteligence</option>
+            </option>
+        </select><br><br>
+        Upload your document here:<input type="file" tabindex="8"><br><br>
+        <input type="button" class="submit" value="sign up"><br><br>
+        <span class="here">Already registered click <a href="login.html">here</a></span><br>
+        <script>
+            <button onclick="showAlert()">Show alert</button>
+            
+        </script>
+            <!-- //alert.("successful your registration");
+            let msg=("You are registered successfully"); -->
+          <!-- </script> -->
+          </form>
+    </div>
+</body>
+</html>
